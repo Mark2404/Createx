@@ -8,6 +8,11 @@
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+    <style>
+        body {
+            scroll-behavior: smooth;
+        }
+    </style>
 
     <title>About us</title>
 </head>
@@ -116,8 +121,8 @@
             </nav>
         </div>
     </header>
-    <section class=" max-w-[1230px] mx-auto flex items-center justify-between mt-6">
-        <div class="About-us-text ">
+    <section class=" max-w-[1230px] mx-auto flex items-center justify-between mt-6 gap-3 mb-16">
+        <div class="About-us-text  ">
             <p class="text-gray-800 mb-2 text-lg text-center sm:text-left">
                 about us
             </P>
@@ -143,19 +148,90 @@
                 <button
                     class="border border-[#f75e05] text-[#f75e05] p-4 rounded hover:bg-[#f75e05] hover:text-white">Explore
                     events</button>
-                <button class="bg-[#f75e05] p-4 rounded">Browse courses</button>
+                <button class="bg-[#f75e05] p-4 rounded text-slate-50 hover:bg-[#f75e05]">Browse courses</button>
             </div>
 
         </div>
-        <img class="w-1/1 hidden sm:block" src="./assets/imgs/about-us-sec-1-img.svg" alt="">
+        <img class="w-1/1 hidden md:block" src="./assets/imgs/about-us-sec-1-img.svg" alt="">
 
     </section>
+    <section class="section-with-video">
+        <div class="flex items-center  max-w-[1230px] mx-auto gap-3">
+            <div class="flex items-center justify-start   ">
+                <div class="relative w-16 h-16 bg-red-500 rounded-full flex items-center justify-center">
+                    <div
+                        class="w-0 h-0 border-t-[8px] border-t-transparent border-b-[8px] border-b-transparent border-l-[14px] border-l-white">
+                    </div>
+                </div>
+            </div>
+            <h6 class="text-2xl font-semibold text-gray-800">Watch Video</h6>
+        </div>
+        <div class="video-sec-img flex items-center justify-center max-w-[1230px] mx-auto justify-between mt-4 mb-16">
+            <img class="justify-start hidden md:block" src="./assets/imgs/sec-with-img-img.svg" alt="">
+            <div class="video-sec-img-numbers">
+                <p class="mb-2 text-black-600 flex items-center gap-2 font-semibold"><span
+                        class="text-3xl font-bold text-red-500">1200</span>students
+                    graduated</p>
+                <p class="mb-2 text-black-600 flex items-center gap-2 font-semibold"><span
+                        class="text-3xl font-bold text-red-500">84</span>completed courses
+                </p>
+                <p class="mb-2 text-black-600 flex items-center gap-2 font-semibold"><span
+                        class="text-3xl font-bold text-red-500">16</span>qualified tutors
+                </p>
+                <p class="mb-2 text-black-600 flex items-center gap-2 font-semibold"><span
+                        class="text-3xl font-bold text-red-500">16</span>years of experience
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </section>
+    <section class="values-sec  flex items-center max-w-[1230px] mx-auto justify-center mt-10  mb-6">
+        <div class="values-sec-text flex flex-col items-center justify-center">
+            <h4 class="text-2xl font-semibold text-gray-800 text-center">We always stand for</h4>
+            <h1 class="text-5xl font-bold text-gray-800 text-center">Our core values</h1>
+
+        </div>
+    </section>
+    <div class="values-imgs max-w-[1230px] mx-auto flex items-center justify-center gap-6 mt-10 flex-col md:flex-row">
+        <div class="values-img flex flex-col items-center justify-center border-r-0 md:border-r-2 p-2">
+            <img src="./assets/icons/values-icon1.svg" alt="">
+            <h6 class="text-2xl font-semibold text-gray-800">Structured Approach</h6>
+            <p class="text-gray-500  text-center">Aenean urna dictum adipiscing nec, <br> cras quisque.
+                Nunc in mauris.
+            </p>
+        </div>
+        <div class="values-img flex flex-col items-center justify-center border-r-0 md:border-r-2 p-2">
+            <img src="./assets/icons/values-icon2.svg" alt="">
+            <h6 class="text-2xl font-semibold text-gray-800">Structured Approach</h6>
+            <p class="text-gray-500  text-center">Aenean urna dictum adipiscing nec, <br> cras quisque.
+                Nunc in mauris.
+            </p>
+        </div>
+        <div class="values-img flex flex-col items-center justify-center border-r-0 md:border-r-2 p-2">
+            <img src="./assets/icons/values-icon3.svg" alt="">
+            <h6 class="text-2xl font-semibold text-gray-800">Structured Approach</h6>
+            <p class="text-gray-500  text-center">Aenean urna dictum adipiscing nec, <br> cras quisque.
+                Nunc in mauris.
+            </p>
+        </div>
+        <div class="values-img flex flex-col items-center justify-center border-r-0 md:border-r-2 p-2">
+            <img src="./assets/icons/values-icon4.svg" alt="">
+            <h6 class="text-2xl font-semibold text-gray-800">Structured Approach</h6>
+            <p class="text-gray-500  text-center">Aenean urna dictum adipiscing nec, <br> cras quisque.
+                Nunc in mauris.
+            </p>
+        </div>
+
+    </div>
 
 
 
 
 
-    <!-- FOOTER SECTION -->
+
     <section class=" footer_section bg-[#fdddcf] py-28 relative text-center">
         <div class="container max-w-[1230px] mx-auto px-4">
             <!-- Title -->
