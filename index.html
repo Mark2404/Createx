@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+
+
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
         body {
             scroll-behavior: smooth;
+            font-family: 'Lato', sans-serif;
         }
     </style>
 
@@ -18,7 +25,7 @@
 </head>
 
 <body>
-    <header class="bg-[#fdddcf] from-pink-100 via-pink-50 to-pink-100">
+    <header id="header" class="bg-[#fdddcf] from-pink-100 via-pink-50 to-pink-100">
         <div class="container max-w-[1230px] mx-auto px-4">
             <nav class="flex justify-between items-center py-4">
                 <!-- Logo -->
@@ -157,22 +164,22 @@
     </section>
     <section class="section-with-video">
         <div class="flex items-center  max-w-[1230px] mx-auto gap-3">
-            <div class="flex items-center justify-start   ">
+            <div class="flex items-center justify-start hidden md:block  ">
                 <div class="relative w-16 h-16 bg-red-500 rounded-full flex items-center justify-center">
                     <div
                         class="w-0 h-0 border-t-[8px] border-t-transparent border-b-[8px] border-b-transparent border-l-[14px] border-l-white">
                     </div>
                 </div>
             </div>
-            <h6 class="text-2xl font-semibold text-gray-800">Watch Video</h6>
+            <h6 class="text-2xl font-semibold text-gray-800 hidden md:block">Watch Video</h6>
         </div>
         <div class="video-sec-img flex items-center justify-center max-w-[1230px] mx-auto justify-between mt-4 mb-16">
             <img class="justify-start hidden md:block" src="./assets/imgs/sec-with-img-img.svg" alt="">
-            <div class="video-sec-img-numbers">
+            <div class="video-sec-img-numbers flex  flex-row gap-4 md:flex-col justify-center">
                 <p class="mb-2 text-black-600 flex items-center gap-2 font-semibold"><span
                         class="text-3xl font-bold text-red-500">1200</span>students
                     graduated</p>
-                <p class="mb-2 text-black-600 flex items-center gap-2 font-semibold"><span
+                <p class="mb-2 text-black-600 flex items-center gap-2 font-semibold "><span
                         class="text-3xl font-bold text-red-500">84</span>completed courses
                 </p>
                 <p class="mb-2 text-black-600 flex items-center gap-2 font-semibold"><span
@@ -948,7 +955,7 @@
             </div>
 
             <!-- Ikkinchi div: 2/15 qismini egallaydi -->
-            <div class=" col-span-1 p-4 rounded">
+            <div class=" col-span-1 p-4 rounded hidden md:block">
                 <h3 class="text-white font-semibold mb-4">SITE MAP</h3>
                 <ul class="space-y-2 text-sm">
                     <li><a href="#" class="hover:text-white">About Us</a></li>
@@ -960,7 +967,7 @@
             </div>
 
             <!-- Uchinchi div: 2/15 qismini egallaydi -->
-            <div class=" col-span-1 p-4 rounded">
+            <div class=" col-span-1 p-4 rounded hidden md:block">
                 <h3 class="text-white font-semibold mb-4">COURSES</h3>
                 <ul class="space-y-2 text-sm">
                     <li><a href="#" class="hover:text-white">Marketing</a></li>
@@ -972,7 +979,7 @@
             </div>
 
             <!-- To'rtinchi div: 3/15 qismini egallaydi -->
-            <div class=" col-span-1 p-4 rounded">
+            <div class=" col-span-1 p-4 rounded hidden md:block">
                 <h3 class="text-white font-semibold mb-4">CONTACT US</h3>
                 <ul class="space-y-4 text-sm">
                     <li class="flex items-center"><i class="fas fa-phone-alt mr-2"></i> (405) 555-0128</li>
@@ -1006,7 +1013,7 @@
                     © All rights reserved. Made with <span class="text-red-500 text-xl">&#9825;</span> by Createx
                     Studio
                 </p>
-                <a href="#" class="hover:text-white">GO TO TOP</a>
+                <a href="#header" class="hover:text-white">GO TO TOP</a>
             </div>
         </div>
     </footer>
