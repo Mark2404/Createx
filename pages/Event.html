@@ -14,6 +14,101 @@
       rel="stylesheet"
     />
 
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+      }
+
+      .accordion-item {
+        margin-bottom: 10px;
+        width: 100%;
+      }
+
+      .accordion-header {
+        font-weight: bold;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        cursor: pointer;
+
+        gap: 15px;
+      }
+
+      .accordion-header.open {
+        color: #000;
+      }
+
+      .accordion-header span {
+        font-size: 1.5rem;
+      }
+
+      .accordion-content {
+        display: none;
+        margin-top: 5px;
+        color: #333;
+      }
+
+      .accordion-content.open {
+        display: block;
+      }
+
+      .theme {
+        color: red;
+        font-size: 10px;
+        font-weight: 400;
+      }
+
+      .eee {
+        position: absolute;
+        left: 160px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(165, 42, 42, 0.503);
+        padding: 50px;
+        margin-top: 150px;
+        width: 80%;
+        height: 50%;
+        gap: 150px;
+      }
+      .item-1 {
+        display: flex;
+        margin-top: 30px;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .btn {
+        background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+        width: 495px;
+        height: 50px;
+        border-radius: 10px;
+        margin-top: 70px;
+      }
+
+      .end p {
+        font-size: 24px;
+        font-weight: 700;
+      }
+
+      .end button {
+        padding: 12px 50px;
+        color: white;
+        border-radius: 5px;
+        background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+      }
+
+      .end {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        margin-top: 50px;
+      }
+    </style>
+
     <title>About us</title>
   </head>
 
@@ -202,26 +297,342 @@
 
     <main>
       <div
-        class="flex-wrap justify-center items-center gap-4 pt-[100px] bg-[#fdddcf] py-[170px]"
+        class="sm:flex-wrap justify-center items-center gap-4 pt-[100px] bg-[#fdddcf] py-[250px]"
       >
-        <div class="flex items-center justify-center">
+        <div class="sm:flex items-center justify-center">
           <h2 class="sm:text-red-500 font-semibold uppercase text-[22px]">
             Online lecture
           </h2>
         </div>
 
-        <div class="flex items-center justify-center">
+        <div class="sm:flex items-center justify-center">
           <h1 class="sm:text-[46px] font-bold text-center">
             Formation of the organizational structure of the <br />
             company in the face of uncertainty
           </h1>
         </div>
       </div>
+
+      <section
+        class="sm:flex justify-center items-center gap-[100px] mt-[100px]"
+      >
+        <div class="flec-col">
+          <div>
+            <h1 class="sm:text-[42px] font-bold text-start mb-4">
+              We will talk about:
+            </h1>
+          </div>
+          <div class="accordion gap-4">
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <span class="theme">+</span>
+                <span class="theme">Theme 1.</span> Aliquet lectus urna viverra
+                in odio.
+              </div>
+              <div class="accordion-content">
+                Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <span class="theme">+</span
+                ><span class="theme">Theme 2.</span> Orci commodo, viverra orci
+                mollis ut euismod.
+              </div>
+              <div class="accordion-content">
+                Orci commodo, viverra orci mollis ut euismod.
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <span class="theme">+</span>
+                <span class="theme">Theme 3. </span>Sagittis vitae facilisi
+                rutrum amet mauris quisque vel.
+              </div>
+              <div class="accordion-content">
+                Sagittis vitae facilisi rutrum amet mauris quisque vel.
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <span class="theme">+</span
+                ><span class="theme"> Theme 4.</span> In id dolor quis nunc,
+                urna hendrerit pharetra.
+              </div>
+              <div class="accordion-content">
+                In id dolor quis nunc, urna hendrerit pharetra.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="sm:flex-col items-center justify-center w-[500px] shadow-xl p-4 rounded border-[1px] border-gray-300"
+        >
+          <div class="sm:flex flex-col gap-[7px]">
+            <p class="sm:font-semibold text-[20px]">Time</p>
+            <p class="sm:font-bold text-[24px] text-red-500">
+              August 5, 11:00 – 14:00
+            </p>
+            <p class="sm:text-[16px] text-gray-600 font-medium">
+              Metus turpis sit lorem lacus, in elit tellus lacus.
+            </p>
+          </div>
+
+          <div class="sm:flex flex-col gap-[7px] mt-11">
+            <p class="sm:font-semibold text-[14px] uppercase">Price</p>
+            <p class="sm:font-semibold text-[22px] text-red-500">Free</p>
+            <p class="sm:text-[14px] text-gray-600">
+              Nulla sem adipiscing adipiscing felis fringilla. Adipiscing <br />
+              mauris quam ac elit tristique dis.
+            </p>
+          </div>
+          <div class="sm:flex flex-col gap-[7px] mt-6">
+            <a
+              class="sm:text-red-500 font-semibold text-[16px] underline"
+              href="https://www.facebook.com/"
+              >Event on Facebook</a
+            >
+          </div>
+
+          <div class="sm:flex flex-col gap-[7px] mt-10">
+            <button
+              class="sm:bg-red-500 font-medium text-[16px] text-white p-2 rounded hover:opacity-80"
+            >
+              Join the event
+            </button>
+          </div>
+        </div>
+      </section>
+      <section
+        class="flex justify-center items-center mt-[100px] p-[100px] gap-[120px]"
+      >
+        <div class="">
+          <img src="../assets/event-img/person.png" alt="" />
+        </div>
+
+        <div class="flex-col gap-[30px] mb-[100px]">
+          <div class="flex-col gap-[20px]">
+            <p class="font-semibold text-[16px] uppercase">Speaker</p>
+            <p class="font-bold text-[40px]">Kathryn Murphy</p>
+            <p class="text-[16px] text-gray-600">
+              Analyst and Marketing specialist in IT company
+            </p>
+          </div>
+
+          <div class="flex-col gap-[15px] mt-[40px]">
+            <p class="text-[16px] text-gray-600">
+              Mattis adipiscing aliquam eu proin metus a iaculis faucibus.
+              Tempus curabitur <br />
+              venenatis, vulputate venenatis fermentum ante. Nisl, amet id
+              semper semper quis <br />
+              commodo, consequat. Massa rhoncus sit morbi odio. Sit maecenas
+              nibh consectetur vel <br />
+              diam. Sem vulputate molestie laoreet at massa sed pharetra. Ac
+              commodo platea id <br />
+              habitasse proin. Nullam sit nec ipsum posuere non. Nam vel aliquam
+              tristique <br />
+              sollicitudin interdum quam.
+            </p>
+          </div>
+
+          <div class="flex gap-[50px] mt-[40px]">
+            <img src="../assets/event-icon/del.png" alt="" />
+            <img src="../assets/event-icon/sentinal.png" alt="" />
+            <img src="../assets/event-icon/nation.png" alt="" />
+          </div>
+
+          <div class="flex gap-[40px] mt-[40px]">
+            <img src="../assets/event-icon/facebook.png" alt="" />
+            <img src="../assets/event-icon/instagram.png" alt="" />
+            <img src="../assets/event-icon/twitter.png" alt="" />
+            <img src="../assets/event-icon/inn.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section
+        class="sm:flex justify-center items-center gap-[200px] mt-[100px]"
+      >
+        <div class="sm:flex-col gap-[20px]">
+          <p class="sm:font-semibold text-[18px] uppercase">For whom?</p>
+          <p class="sm:font-bold text-[46px]">
+            Who will benefit from <br />
+            the event:
+          </p>
+        </div>
+        <div class="sm:flex-col">
+          <div class="sm:flex gap-[20px]">
+            <img src="../assets/event-icon/check.png" alt="" />
+            <p>Specialists with more than 1 year of active work experience</p>
+          </div>
+
+          <div class="flex gap-[20px] mt-[30px]">
+            <img
+              class="sm:w-[20px] h-[20px]"
+              src="../assets/event-icon/check.png"
+              alt=""
+            />
+            <p>
+              Mobile app designers who want to improve their skills in <br />
+              solving business problems, creating and testing <br />
+              human-centered interfaces
+            </p>
+          </div>
+
+          <div class="sm:flex gap-[20px] mt-[30px]">
+            <img src="../assets/event-icon/check.png" alt="" />
+            <p>Professional designers who want to feel more confident in UX</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="eee">
+        <div class="sm:flex justify-between gap-[200px]">
+          <img src="../assets/event-img/illustration.png" alt="" />
+        </div>
+
+        <div class="sm:flex flex-col gap-[30px]">
+          <div>
+            <p class="sm:font-bold text-[30px]">
+              Don’t want to miss the best events? <br />
+              Subscribe to our newsletter!
+            </p>
+          </div>
+
+          <div class="sm:flex -items-center gap-[30px]">
+            <input
+              class="sm:p-2 w-[400px] h-[50px] rounded-lg"
+              type="email"
+              placeholder="Your working email"
+            />
+
+            <button
+              class="sm:p-2 w-[150px] h-[50px] text-white bg-red-900 rounded"
+            >
+              Subscribe
+            </button>
+          </div>
+
+          <div class="sm:flex gap-[20px]">
+            <img src="../assets/event-icon/check.png" alt="" />
+            <p>I agree to receive communications from Createx Online School</p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="sm:mt-[650px] flex justify-center items-center gap-[100px]"
+      >
+        <form class="flex-col gap-[50px]">
+          <p class="font-medium text-[18px] uppercase">Don’t miss the event</p>
+          <p class="font-bold text-[40px]">Leave a request</p>
+
+          <div class="item-1">
+            <label class="text-gray-500" for="">Full Name</label>
+            <input
+              class="w-[490px] h-[50px] rounded"
+              type="text"
+              placeholder="Your full name"
+            />
+          </div>
+
+          <div class="item-1">
+            <label class="text-gray-500" for="">Email</label>
+            <input
+              class="w-[490px] h-[50px] rounded"
+              type="text"
+              placeholder="Your working email"
+            />
+          </div>
+
+          <div class="item-1">
+            <label class="text-gray-500" for="">Phone</label>
+            <input
+              class="w-[490px] h-[50px] rounded"
+              type="text"
+              placeholder="Your phone number"
+            />
+          </div>
+
+          <button class="btn">Join the event</button>
+          <p class="mt-[20px] font-medium">
+            * You will receive a link to the online lecture in an email after
+            registration.
+          </p>
+        </form>
+        <div>
+          <img src="../assets/event-img/imgg.png" alt="" />
+        </div>
+      </section>
+
+      <section
+        class="sm:flex-col justify-center items-center bg-[#E5E8ED] p-[100px] pb-[180px] mt-[150px] gap-[100px]"
+      >
+        <div class="sm:flex-col justify-center items-center ml-[100px]">
+          <p class="font-semibold text-[16px]">Check other online events</p>
+          <p class="font-bold text-[42px]">You may be interested in</p>
+        </div>
+
+        <div class="sm:flex flex-wrap justify-center gap-6 p-6 mt-[20px]">
+          <!-- Card 1 -->
+          <div
+            class="max-w-sm border border-gray-200 p-6 rounded-lg shadow-lg bg-white"
+          >
+            <p class="text-red-500 font-bold text-lg">05 Aug</p>
+            <p class="text-gray-600 mt-2">11:00 - 14:00</p>
+            <h3 class="text-gray-800 font-semibold text-lg mt-4">
+              Formation of the organizational structure of the company in the
+            </h3>
+            <p class="text-gray-500 mt-2">Online master-class</p>
+            <button
+              class="mt-6 w-full py-2 bg-transparent text-black-500 border-2 border-red-500 rounded-md hover:bg-red-600"
+            >
+              View more
+            </button>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="max-w-sm border border-gray-200 p-6 rounded-lg shadow-lg bg-white"
+          >
+            <p class="text-red-500 font-bold text-lg">24 Jul</p>
+            <p class="text-gray-600 mt-2">11:00 - 12:30</p>
+            <h3 class="text-gray-800 font-semibold text-lg mt-4">
+              Building a customer service department. Best Practices.
+            </h3>
+            <p class="text-gray-500 mt-2">Online lecture</p>
+            <button
+              class="mt-6 w-full py-2 bg-transparent text-black-500 border-2 border-red-500 rounded-md hover:bg-red-600"
+            >
+              View more
+            </button>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="max-w-sm border border-gray-200 p-6 rounded-lg shadow-lg bg-white"
+          >
+            <p class="text-red-500 font-bold text-lg">10 Jul</p>
+            <p class="text-gray-600 mt-2">9:00 - 14:00</p>
+            <h3 class="text-gray-800 font-semibold text-lg mt-4">
+              Find and evaluate: search and assessment tools for candidates.
+            </h3>
+            <p class="text-gray-500 mt-2">Online workshop</p>
+            <button
+              class="mt-6 w-full py-2 bg-transparent text-black-500 border-2 border-red-500 rounded-md hover:bg-red-600"
+            >
+              View more
+            </button>
+          </div>
+        </div>
+
+        <div class="end">
+          <p>Do you want more?</p>
+          <button>Explore all events</button>
+        </div>
+      </section>
     </main>
 
-    <div class="h-60"></div>
-    <div class="h-60"></div>
-    <div class="h-60"></div>
     <!-- FOOTER SECTION -->
 
     <!-- FOOTER -->
@@ -334,5 +745,32 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      document.querySelectorAll(".accordion-header").forEach((header) => {
+        header.addEventListener("click", () => {
+          const currentlyOpen = document.querySelector(
+            ".accordion-header.open"
+          );
+          const contentOpen = document.querySelector(".accordion-content.open");
+
+          if (currentlyOpen && currentlyOpen !== header) {
+            currentlyOpen.classList.remove("open");
+            currentlyOpen.querySelector("span").textContent = "+";
+            if (contentOpen) contentOpen.classList.remove("open");
+          }
+
+          const content = header.nextElementSibling;
+
+          header.classList.toggle("open");
+          content.classList.toggle("open");
+          header.querySelector("span").textContent = header.classList.contains(
+            "open"
+          )
+            ? "−"
+            : "+";
+        });
+      });
+    </script>
   </body>
 </html>
